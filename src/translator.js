@@ -14,17 +14,17 @@ x
 x
 x
 xxx`,
-D: `xxx
+D: `xx
 x      x
 x      x
 x      x
-xxx`,
+xx`,
 E: `xxx
 x
 xx
 x
 xxx`,
-F: `xxx,
+F: `xxx
 x
 xx
 x
@@ -114,8 +114,16 @@ x                  x
 x      x      x
 xxxxx
 xx      xx`,
-X: ``,
-Y: ``,
+X: `x      x
+x      x
+      x
+x      x
+x      x`,
+Y: `x      x
+x      x
+      x
+      x
+      x`,
 Z: `xxx
             x
       x
@@ -142,7 +150,3 @@ export function translate(text = '', emoji = ':PugVibe:') {
     return result + '\n\n' + emojiLetter;
   }, '');
 }
-
-// Test code
-// const test = translate('mn', ':owoked:');
-// console.log(test);
