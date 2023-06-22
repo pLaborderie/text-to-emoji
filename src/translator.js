@@ -64,11 +64,11 @@ xx      xx
 x      x      x
 x                  x
 x                  x`,
-N: `xx                  x
-x      x            x
-x            x      x
-x                  xx
-x                        x`,
+N: `x                  x
+xx            x
+x      x      x
+x            xx
+x                  x`,
 O: `xxx
 x      x      
 x      x      
@@ -132,7 +132,7 @@ function letterToEmoji(letter = '', emoji) {
   return letters[letter.toUpperCase()].replace(/x/g, emoji);
 }
 
-function translate(text = '', emoji = ':PugVibe:') {
+export function translate(text = '', emoji = ':PugVibe:') {
   const letters = text.split('');
   return letters.reduce((result, currentLetter) => {
     const emojiLetter = letterToEmoji(currentLetter, emoji);
@@ -144,5 +144,5 @@ function translate(text = '', emoji = ':PugVibe:') {
 }
 
 // Test code
-const test = translate('qr', ':owoked:');
-console.log(test);
+// const test = translate('mn', ':owoked:');
+// console.log(test);
